@@ -24,21 +24,38 @@
     </div>
     <div class="box-textarea">
       <p>Follow these three simple steps to get started with Project Box</p>
-        <br>
-          <p><i class="fas fa-user-circle fa-2x icon-bg"></i>Visit the profile page to sign up and login.</p>
-            <br>
-          <p><i class="fas fa-pencil-alt fa-2x icon-bg"></i>Choose a project from the briefs page and let your creativity flow.</p>
-        <br>
-      <p><i class="fas fa-globe-americas fa-2x icon-bg"></i>Head to the newsfeed page to share your completed projects with the world!</p>
+    <br>
+        <!--Icon One-->
+        <div class="started-icon">
+          <i class="fas fa-user-circle fa-2x icon-bg fa-started-icon"></i>
+        </div>
+          <div class="started-text">
+            <p>Visit the profile page to sign up and login.</p>
+          </div>
+    <br>
+        <!--Icon Two-->
+        <div class="started-icon">
+          <i class="fas fa-pencil-alt fa-2x icon-bg fa-started-icon"></i>
+        </div>
+          <div class="started-text">
+            <p>Choose a project from the briefs page and let your creativity flow.</p>
+          </div>
+    <br>
+    <!--Icon Three-->
+        <div class="started-icon">
+          <i class="fas fa-globe-americas fa-2x icon-bg fa-started-icon"></i>
+        </div>
+          <div class="started-text">
+            <p>Head to the newsfeed page to share your completed projects with the world!</p>
+          </div>
     </div>
   </div>
   <!--Top Projects Section-->
   <div class="box-large">
     <div class="box-topbar">
-        <h1 class="invert-color">Top Projects</h1>
+        <h1 class="invert-color">Top Of The Box</h1>
     </div>
     <div class="box-textarea">
-      <p>Month Year</p>
         <div class="box-split-two" style="margin: 10px auto;">
             <div class="box-split-2-section-1">
               @include('includes.inc-top-project')

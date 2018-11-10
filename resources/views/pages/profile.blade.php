@@ -26,6 +26,8 @@
   </div>
   <!--Main Content-->
   <div class="container-split-main">
+    <!--Profile Box-->
+      @include('includes.inc-profile')
     <!--Posts Feed Loop-->
     @include('includes.inc-post')
   </div>

@@ -72,6 +72,47 @@
       width: 49%;
     }
 
+    /*Mobile Nav Responsive text*/
+    @media only screen and (max-width: 370px) {
+        .small-text {
+          font-size: 1.5em;
+        }
+    }
+
+  /*Mobile Navigation*/
+  @media only screen and (max-width: 600px) {
+    .nav-right {
+      width: 29%;
+      padding-right: 5%;
+    }
+    .nav-left-1 {
+      width: 15%;
+      padding-left: 15px;
+    }
+    .nav-left-2 {
+      width: 44%;
+    }
+  }
+
+  /*Mobile Navigation Menu and Control*/
+  .mobile-nav-menu {
+    position: fixed;
+    display: flex;
+    background-color: var(--bg-green);
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    top: -100vh;
+    transition: ease-in-out 0.3;
+  }
+
+    .mobile-nav-menu-inner {
+      display: flex;
+      text-align: center;
+    }
+
   /*Hero Image*/
   .hero {
     position: relative;
@@ -88,6 +129,16 @@
       padding: 10px;
       margin-bottom: 20px;
     }
+
+    @media only screen and (max-width: 600px) {
+      .hero-textbox {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+      }
+    }
+
+
 
   /*Body Container*/
 
@@ -135,28 +186,29 @@
     display: grid;
     padding: 20px;
     grid-row-gap: 10px;
-    grid-template-areas: "one two three";
+    grid-template-areas: "footerone footertwo footerthree";
   }
 
-  @media only screen and (max-width: 600px) {
-    .footer-contianer {
-      grid-template-areas: "one"
-                           "two"
-                           "three";
-    }
+  .footer-one {
+    grid-area: footerone;
   }
 
-    .footer-one {
-      grid-area: one;
+  .footer-two{
+    grid-area: footertwo;
+  }
+
+  .footer-three {
+    grid-area: footerthree;
+  }
+
+  @media only screen and (max-width: 820px) {
+    .footer-container {
+      grid-template-areas: "footerone"
+                           "footertwo"
+                           "footerthree";
     }
 
-    .footer-two {
-      grid-area: two;
-    }
-
-    .footer {
-      grid-area: three;
-    }
+  }
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
   /*Content Boxes*/
 
@@ -207,6 +259,34 @@
     }
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*Templates*/
+    /*Getting Started Template*/
+    .started-icon {
+      width: 10%;
+      height: auto;
+      display: inline-block;
+    }
+
+    .started-text {
+      width: 80%;
+      height: auto;
+      display: inline-block;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .started-icon {
+        text-align: center;
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .started-text {
+        text-align: center;
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+        }
     /*Top Project Template*/
 
     .tp-container {
@@ -219,10 +299,74 @@
         height: auto;
       }
 
+    /*Profile Info Template*/
+
+    .profile-grid {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+
+      .profile-pic {
+        display: inline-block;
+        width: 30%;
+
+      }
+
+      .profile-text {
+        display: inline-block;
+        height: 20vh;
+        width: 60%;
+      }
+
+        .profile-text-inner {
+          height: 15vh;
+          display: -webkit-flex;
+          display: flex;
+          align-items: center;
+        }
+
+      .tp-profile-img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+      }
+
+      @media only screen and (max-width: 1270px) {
+            .profile-pic {
+              width: 100%;
+              display: block;
+              text-align: center;
+              margin: auto;
+            }
+
+            .tp-profile-img {
+              width: 80%;
+              height: auto;
+              border-radius: 50%;
+            }
+
+            .profile-text {
+              display: block;
+              width:100%;
+              padding: 0;
+              height: auto;
+            }
+          }
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*Misc*/
     /*Font Awesome*/
-    .fas {
+    .fa-menu-open{
+      color: var(--white);
+    }
+
+    .fa-menu-close{
+      color: var(--white);
+    }
+
+    .fa-started-icon {
       color:  var(--bg-green);
     }
 

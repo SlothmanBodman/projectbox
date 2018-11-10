@@ -6,6 +6,6 @@
     <img class="tp-img" src="../public/images/500-placeholder.jpg" alt="post-image">
   </div>
   <div class="box-topbar">
-    <p>Likes and Button Here</p>
+    <p class="invert-color"><i class="fas fa-heart" style="vertical-align: middle"></i> 100</p>
   </div>
 </div>
