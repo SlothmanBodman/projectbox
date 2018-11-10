@@ -24,6 +24,8 @@
           <script type="text/javascript" src="{{ URL::asset('../resources/js/mobile-nav-display.js') }}"></script>
           <!--Mobile Navigation Control-->
           <script type="text/javascript" src="{{ URL::asset('../resources/js/mobile-nav-control.js') }}"></script>
+          <!--Sidebar Collapse Control-->
+          <script type="text/javascript" src="{{ URL::asset('../resources/js/sidebar-collapse-control.js') }}"></script>
     </head>
     <body>
       <div class="navigation">

@@ -11,7 +11,7 @@
     <input type="checkbox" name="weekly" value="weekly"><p class="checkbox-label">Weekly</p><br>
     <input type="checkbox" name="generated" value="generated"><p class="checkbox-label">Randomly Generated</p></label><br>
     <h3>User</h3>
-    <input type="text" name="search" value="Search">
+    <input type="text" name="search" placeholder="Search">
     <button type="submit" name="button">Update Feed</button>
   </form>
 </div>

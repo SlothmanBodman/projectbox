@@ -8,7 +8,9 @@
     </div>
     <div class="profile-text">
       <div class="profile-text-inner">
-        <p>Bio</p>
+        <div>
+          <p>Bio</p>
+        </div>
       </div>
     </div>
   </div>

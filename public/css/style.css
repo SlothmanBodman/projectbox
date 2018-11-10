@@ -155,10 +155,10 @@
     margin: auto;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    grid-template-areas: "sidebar main main"
+    grid-template-areas: "sidebar main main";
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 980px) {
     .container-split {
       grid-template-areas: "sidebar"
                            "main";
@@ -270,9 +270,10 @@
       width: 80%;
       height: auto;
       display: inline-block;
+      line-height: 68px;
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 1220px) {
       .started-icon {
         text-align: center;
         width: 100%;
@@ -317,12 +318,12 @@
 
       .profile-text {
         display: inline-block;
-        height: 20vh;
+        height: 25vh;
         width: 60%;
       }
 
         .profile-text-inner {
-          height: 15vh;
+          height: inherit;
           display: -webkit-flex;
           display: flex;
           align-items: center;
@@ -355,6 +356,40 @@
               height: auto;
             }
           }
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*Collapsable mobile side bar styling*/
+    .topbar-collapse-split-left {
+      display: inline-block;
+      width: 100%;
+      height: auto;
+    }
+
+    .topbar-collapse-split-right {
+      display: inline-block;
+      width: 10%;
+      display: none;
+    }
+
+    .collapse-open {
+      color: var(--white);
+    }
+
+    .collapse-close {
+      color: var(--white);
+    }
+
+    @media only screen and (max-width: 980px) {
+      .topbar-collapse-split-left {
+        width: 79%;
+        height: auto;
+      }
+
+      .topbar-collapse-split-right {
+        text-align: right;
+        width: 10%;
+        display: inline-block;
+      }
+    }
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*Misc*/
     /*Font Awesome*/
