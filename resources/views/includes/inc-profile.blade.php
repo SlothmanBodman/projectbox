@@ -9,7 +9,7 @@
     <div class="profile-text">
       <div class="profile-text-inner">
         <div>
-          <p>Bio</p>
+          <p>Bio</p>   
         </div>
       </div>
     </div>
