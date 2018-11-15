@@ -1,5 +1,5 @@
 <div style="background-color: var(--bg-green); padding: 5px; width: 80%;">
-  <form action="contact.php" method="post">
+  <form action="" method="post">
     <input type="text" name="email" placeholder="Email Address">
     <input type="text" name="subject" placeholder="Subject">
     <textarea name="message" placeholder="Message"></textarea>

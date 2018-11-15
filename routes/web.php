@@ -18,3 +18,5 @@ Route::get('/feed', 'PagesController@feed');
 Route::get('/briefs', 'PagesController@briefs');
 
 Route::get('/login', 'PagesController@profile');
+
+Route::post('/newUser', 'UserController@newUser');
