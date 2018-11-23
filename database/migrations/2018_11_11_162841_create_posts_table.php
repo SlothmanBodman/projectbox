@@ -17,7 +17,7 @@ class CreatePostsTable extends Migration
             $table->increments('post_id');
             $table->string('user_id');
             $table->string('post_image_path');
-            $table->longText('post_caption');
+            $table->longText('post_caption')->nullable();
             $table->integer('post_likes');
             $table->string('post_type');
             $table->timestamps();

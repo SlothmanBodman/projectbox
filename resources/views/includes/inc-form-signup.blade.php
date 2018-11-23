@@ -1,5 +1,5 @@
 <div>
-  <form action="{{ action("UserModel@newUser") }}" method="post">
+  <form action="{{ action("UserController@store") }}" method="post">
     <input type="text" name="username" placeholder="Username">
       <input type="text" name="email" placeholder="Email Address">
         <input type="text" name="password"  onfocus="this.type='password'" placeholder="Password">

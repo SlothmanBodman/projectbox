@@ -19,4 +19,4 @@ Route::get('/briefs', 'PagesController@briefs');
 
 Route::get('/login', 'PagesController@profile');
 
-Route::post('/newUser', 'UserController@newUser');
+Route::post('/newUser', 'UserController@store');
