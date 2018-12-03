@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@include('includes.inc-errors')
+
 @section('content')
 <!--Start Profile Page-->
 <div class="container-split">

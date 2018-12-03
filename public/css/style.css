@@ -486,3 +486,13 @@
     .checkbox-label {
       display: inline-block;
     }
+
+/*Error Message*/
+  .error-box {
+    background-color: #f45642;
+    width: 100vw;
+    position: fixed;
+    z-index: 30;
+    padding: 5px;
+    bottom: 0;
+  }

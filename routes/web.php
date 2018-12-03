@@ -11,12 +11,15 @@
 |
 */
 //routes url info to controller functions
+
+//basic Pages
 Route::get('/', 'PagesController@index');
 
 Route::get('/feed', 'PagesController@feed');
 
 Route::get('/briefs', 'PagesController@briefs');
 
-Route::get('/login', 'PagesController@profile');
+Route::get('/profile', 'PagesController@profile');
 
-Route::post('/newUser', 'UserController@store');
+//database interation pages
+Route::post('/newUser', 'UserController@newuser');

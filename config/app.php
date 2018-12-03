@@ -213,6 +213,8 @@ return [
         /*Additional aliases for better form control*/
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+        /*Alias for UUID generation*/
+        'Uuid' => Webpatser\Uuid\Uuid::class,
 
     ],
 
