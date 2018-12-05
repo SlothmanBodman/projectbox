@@ -23,3 +23,5 @@ Route::get('/profile', 'PagesController@profile');
 
 //database interation pages
 Route::post('/newUser', 'UserController@newuser');
+
+Route::post('/login', 'UserController@login');

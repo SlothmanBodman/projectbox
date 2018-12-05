@@ -16,7 +16,7 @@ class UserController extends Controller
     request()->validate([
       'user_name' => 'required|min:2|max:50',
       'user_email' => 'required|email|unique:Users',
-      'user_password' => 'required|min:6',
+      'user_password' => 'required|alphaNum|min:6',
       'conf_password' => 'required|same:user_password'
     ]);
     /*Get Variables from user input*/
@@ -39,6 +39,35 @@ class UserController extends Controller
 
     return redirect()->action('PagesController@profile');
   }
+
+
+    public function login(Request $request)
+    {
+      request()->validate([
+        'user_login_email' => 'required|email',
+        'user_login_password' => 'required|alphaNum|min:6'
+      ]);
+
+      $userdata = array(
+        'user_login_email'     => $request->user_login_email,
+        'user_login_password'  => $request->user_login_password
+      );
+
+      // attempt to do the login
+      if (Auth::attempt($userdata)) {
+
+          //successful redirect code here
+
+          //test echo
+          echo 'SUCCESS!';
+
+      } else {
+
+          // validation not successful, send back to form
+          return redirect()->action('PagesController@profile');
+
+}
+    }
     /**
      * Display a listing of the resource.
      *
