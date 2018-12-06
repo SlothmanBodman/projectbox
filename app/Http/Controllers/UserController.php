@@ -1,10 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace projectbox-old\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Webpatser\Uuid\Uuid;
+use Illuminate\Support\Facades\Auth;
+
 
 class UserController extends Controller
 {
@@ -28,7 +30,7 @@ class UserController extends Controller
     $user_password_hashed = Hash::make($user_password);
 
     /*use user model for comunication with db table*/
-    $user = new \App\Users;
+    $user = new \projectbox-old\Users;
 
     /*use webpatser package to generate uuid and insert data into table*/
     $user->user_id = Uuid::generate()->string;

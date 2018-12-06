@@ -156,11 +156,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        projectbox-old\Providers\AppServiceProvider::class,
+        projectbox-old\Providers\AuthServiceProvider::class,
+        // projectbox-old\Providers\BroadcastServiceProvider::class,
+        projectbox-old\Providers\EventServiceProvider::class,
+        projectbox-old\Providers\RouteServiceProvider::class,
 
     ],
 

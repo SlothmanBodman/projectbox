@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace projectbox-old\Http\Controllers;
 
 use Illuminate\Http\Request;
 //fuctions returning page views

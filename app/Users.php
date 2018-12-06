@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace projectbox-old;
 
 use Illuminate\Database\Eloquent\Model;
 
